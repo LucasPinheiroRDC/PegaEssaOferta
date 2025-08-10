@@ -37,6 +37,7 @@
             <p class="text-lg text-gray-400 mb-16 max-w-2xl mx-auto">
                 Uma abordagem inovadora para resolver problemas antigos e abrir novas oportunidades.
             </p>
+            <!-- A grade de cards muda de 1 coluna para 2 e 4 conforme a tela aumenta -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Card de Benefício 1 -->
                 <div class="bg-gray-800 p-8 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
@@ -77,6 +78,7 @@
     <!-- Seção de Prova Social com Layout Diferente -->
     <section class="bg-gray-900 py-20 md:py-32 px-4 sm:px-6 lg:px-8">
         <div class="container mx-auto">
+            <!-- Em telas pequenas os itens se empilham (flex-col). Em telas grandes, ficam lado a lado (lg:flex-row) -->
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <div class="lg:w-1/2">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">A Confiança dos Nossos Clientes é o Nosso Maior Ativo</h2>
@@ -99,8 +101,8 @@
                     </blockquote>
                 </div>
                 <div class="lg:w-1/2 flex justify-center">
-                    <!-- Placeholder de imagem para a seção de depoimentos -->
-                    <img src="https://placehold.co/600x400/1e293b/fff?text=Prova+Social" alt="Pessoas sorrindo" class="rounded-xl shadow-2xl max-w-full h-auto">
+                    <!-- A imagem ocupa a largura total em telas pequenas e se ajusta em telas grandes -->
+                    <img src="https://placehold.co/600x400/1e293b/fff?text=Prova+Social" alt="Pessoas sorrindo" class="rounded-xl shadow-2xl w-full lg:w-auto h-auto">
                 </div>
             </div>
         </div>
@@ -121,7 +123,7 @@
 
     <!-- Rodapé -->
     <footer class="bg-gray-900 text-gray-400 py-8 px-4 sm:px-6 lg:px-8 text-center">
-        <div class="container mx-auto">
+        <div class="container mx-auto"> 
             <p>&copy; 2025 PEO PINHEIRO. Todos os direitos reservados.</p>
         </div>
     </footer>
@@ -130,3 +132,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
