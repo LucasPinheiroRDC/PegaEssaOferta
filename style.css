@@ -1,0 +1,20 @@
+/* Estilos personalizados para a landing page */
+
+body {
+    /* Define a cor de fundo e a cor do texto para o corpo, em um estilo escuro */
+    background-color: #0d0c1d;
+    color: #f7fafc;
+}
+
+/* Estilização para o botão de Chamada para Ação (CTA) */
+.cta-button {
+    /* Adiciona uma transição suave para todos os efeitos */
+    transition: all 0.3s ease;
+}
+
+/* Efeito de hover no botão de CTA */
+.cta-button:hover {
+    /* Ao passar o mouse, o botão se move para cima e ganha uma sombra */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(234, 88, 12, 0.4);
+}
